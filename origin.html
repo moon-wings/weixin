@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>微信</title>
+	<link href="http://cdn.bootcss.com/materialize/0.97.6/css/materialize.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/index.css">
+	<script src="http://cdn.bootcss.com/jquery/2.2.4/jquery.js"></script>
+	<script src="js/angular.js"></script>
+	<script src="js/angular-animate.js"></script>
+	<script src="js/angular-route.js"></script>
+	<script src="js/index.js"></script>
+</head>
+<body>
+
+	<header class="header">
+		<div class="header-nav">
+			<span class="logo-name">微信</span>
+			<span class="mes-num">(6)</span>
+			<div class="tool-bar">
+				<div class="search"></div>
+				<div class="add">
+					<span class="red-circle"></span>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="content">
+		<!-- <div class="con-zone">
+			<div class="con-item">
+				<span class="head-img"></span>
+				<div class="con-item-inner">
+					<a href="">
+						<div class="title">王子</div>
+						<div class="summary">给你发了红包，记得接收</div>
+					</a>
+				</div>
+				<span class="time">09:21</span>
+			</div>
+			<div class="con-item">
+				<span class="head-img"></span>
+				<div class="con-item-inner">
+					<a href="">
+						<div class="title">王子</div>
+						<div class="summary">给你发了红包，记得接收</div>
+					</a>
+				</div>
+				<span class="time">09:21</span>
+			</div>
+			<div class="con-item">
+				<span class="head-img"></span>
+				<div class="con-item-inner">
+					<a href="">
+						<div class="title">王子</div>
+						<div class="summary">给你发了红包，记得接收</div>
+					</a>
+				</div>
+				<span class="time">09:21</span>
+			</div>
+			<div class="con-item">
+				<span class="head-img"></span>
+				<div class="con-item-inner">
+					<a href="">
+						<div class="title">王子</div>
+						<div class="summary">给你发了红包，记得接收</div>
+					</a>
+				</div>
+				<span class="time">09:21</span>
+			</div>
+			<div class="con-item">
+				<span class="head-img"></span>
+				<div class="con-item-inner">
+					<a href="">
+						<div class="title">王子</div>
+						<div class="summary">给你发了红包，记得接收</div>
+					</a>
+				</div>
+				<span class="time">09:21</span>
+			</div>
+			<div class="con-item">
+				<span class="head-img"></span>
+				<div class="con-item-inner">
+					<a href="">
+						<div class="title">王子</div>
+						<div class="summary">给你发了红包，记得接收给你发了红包，记得接收给你发了红包，记得接收</div>
+					</a>
+				</div>
+				<span class="time">09:21</span>
+			</div>
+			<div class="con-item">
+				<span class="head-img"></span>
+				<div class="con-item-inner">
+					<a href="">
+						<div class="title">王子</div>
+						<div class="summary">给你发了红包，记得接收给你发了红包，记得接收给你发了红包，记得接收</div>
+					</a>
+				</div>
+				<span class="time">09:21</span>
+			</div>
+			<div class="con-item">
+				<span class="head-img"></span>
+				<div class="con-item-inner">
+					<a href="">
+						<div class="title">王子</div>
+						<div class="summary">给你发了红包，记得接收给你发了红包，记得接收给你发了红包，记得接收</div>
+					</a>
+				</div>
+				<span class="time">09:21</span>
+			</div>
+			<div class="con-item">
+				<span class="head-img"></span>
+				<div class="con-item-inner">
+					<a href="">
+						<div class="title">王子</div>
+						<div class="summary">给你发了红包，记得接收给你发了红包，记得接收给你发了红包，记得接收</div>
+					</a>
+				</div>
+				<span class="time">09:21</span>
+			</div>
+			<div class="con-item">
+				<span class="head-img"></span>
+				<div class="con-item-inner">
+					<a href="">
+						<div class="title">王子</div>
+						<div class="summary">给你发了红包，记得接收给你发了红包，记得接收给你发了红包，记得接收</div>
+					</a>
+				</div>
+				<span class="time">09:21</span>
+			</div>
+		</div> -->
+		<!-- <div class="con-zone">
+			<div class="extra-info">
+				<ul class="kuang">
+					<li class="e-item">
+						<span class="e-icon"></span>
+						<span class="e-info">发起群聊</span>
+					</li>
+					<li class="e-item">
+						<span class="e-icon addfri"></span>
+						<span class="e-info">添加朋友</span>
+					</li>
+					<li class="e-item">
+						<span class="e-icon sys"></span>
+						<span class="e-info">扫一扫</span>
+					</li>
+					<li class="e-item">
+						<span class="e-icon sfk"></span>
+						<span class="e-info">收付款</span>
+					</li>
+					<li class="e-item">
+						<span class="e-icon bzyfk"></span>
+						<span class="e-info">帮助与反馈</span>
+					</li>
+				</ul>
+			</div>
+			<ul class="cate">
+				<li>
+					<a href="" class="cate-icon"></a>
+					<span class="cate-con">新的朋友</span>
+				</li>
+				<li>
+					<a href="" class="cate-icon"></a>
+					<span class="cate-con">群聊</span>
+				</li>
+				<li>
+					<a href="" class="cate-icon"></a>
+					<span class="cate-con">标签</span>
+				</li>
+				<li>
+					<a href="" class="cate-icon"></a>
+					<span class="cate-con">公众号</span>
+				</li>
+			</ul>
+			<div class="friends">
+				<div class="friend">
+					<div class="szm">A</div>
+					<ul>
+						<li>
+							<a href="" class="cate-icon"></a>
+							<span class="cate-con">安小嘉</span>
+						</li>
+					</ul>
+				</div>
+				<div class="friend">
+					<div class="szm">B</div>
+					<ul>
+						<li>
+							<a href="" class="cate-icon"></a>
+							<span class="cate-con">波波</span>
+						</li>
+					</ul>
+				</div>
+				<div class="friend">
+					<div class="szm">C</div>
+					<ul>
+						<li>
+							<a href="" class="cate-icon"></a>
+							<span class="cate-con">才子</span>
+						</li>
+						<li>
+							<a href="" class="cate-icon"></a>
+							<span class="cate-con">陈学东</span>
+						</li>
+					</ul>
+				</div>
+				<div class="friend">
+					<div class="szm">D</div>
+					<ul>
+						<li>
+							<a href="" class="cate-icon"></a>
+							<span class="cate-con">冬天</span>
+						</li>
+						<li>
+							<a href="" class="cate-icon"></a>
+							<span class="cate-con">懂了</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div> -->
+		<!-- <div class="con-zone">
+			<div class="silver">
+				<ul>
+					<li class="circle-friend cf">
+						<span class="p-icon"></span>
+						<span class="p-info">朋友圈</span>
+					</li>
+					<li class="sys-box circle-friend">
+						<a href="">
+							<span class="p-icon"></span>
+						    <span class="p-info">扫一扫</span>
+						</a>
+					</li>
+					<li class="yaoyiyao-box circle-friend">
+						<span class="p-icon"></span>
+					    <span class="p-info">摇一摇</span>
+					</li>
+					<li class="piaoliupin circle-friend">
+						<span class="p-icon"></span>
+						<span class="p-info">漂流瓶</span>
+					</li>
+					<li class="shop circle-friend">
+						<a href="">
+							<span class="p-icon"></span>
+						    <span class="p-info">购物</span>
+						</a>
+					</li>
+					<li class="game circle-friend">
+						<span class="p-icon"></span>
+					    <span class="p-info">游戏</span>
+					</li>
+				</ul>
+			</div>
+		</div> -->
+		<!-- <div class="con-zone">
+			<div class="silver">
+				<ul>
+					<li class="owner">
+					     <span class="owner-icon"></span>
+					     <div class="name">
+					     	<span class="owner-name">醉月</span>
+					     	<span class="owner-num">微信号: 123466789</span>
+					     </div>
+					     <span class="owner-ewm"></span>
+					</li>
+					<li class="circle-friend album">
+						<a href="">
+							<span class="p-icon"></span>
+							<span class="p-info">相册</span>
+						</a>
+					</li>
+					<li class="sys-box circle-friend">
+						<span class="p-icon"></span>
+					    <span class="p-info">收藏</span>
+					</li>
+					<li class="circle-friend album">
+						<a href="">
+							<span class="p-icon"></span>
+							<span class="p-info">钱包</span>
+						</a>
+					</li>
+					<li class="sys-box circle-friend">
+						<span class="p-icon"></span>
+					    <span class="p-info">卡券</span>
+					</li>
+					<li class="circle-friend album">
+						<span class="p-icon"></span>
+						<span class="p-info">表情</span>
+					</li>
+					<li class="circle-friend set">
+						<span class="p-icon"></span>
+						<span class="p-info">设置</span>
+					</li>
+				</ul>
+			</div>
+		</div> -->
+
+	</section>
+	<footer class="footer">
+		<div class="selected">
+			<ul>
+				<li class="info active">
+					<span class="info-icon"></span>
+					<span class="info-num">6</span>
+					<span class="info-con">微信</span>
+				</li>
+				<li class="info">
+					<span class="info-icon tongxunlu"></span>
+					<span class="info-con">通讯录</span>
+				</li>
+				<li class="info">
+					<span class="info-icon find"></span>
+					<span class="info-con">发现</span>
+				</li>
+				<li class="info info-last">
+					<span class="info-icon me"></span>
+					<span class="info-con">我</span>
+				</li>
+			</ul>
+		</div>
+	</footer>
+	
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<section class="content">
+	<div class="con-zone" ng-controller="weixinCtrl" id="weixin">
+		<div class="con-item" ng-class="{'show-delete':show}" ng-swipe-left="show=true" ng-swipe-right="show=false" ng-init="show=false" ng-repeat="v in chatList" >
+	        <a href="#/weixin/{{$index}}" class="bao">
+	        	<div class="xx">
+					<img src="{{v.image}}" class="head-img">
+					<div class="con-item-inner">
+						<div>
+							<div class="title">{{v.name}}</div>
+							<div class="summary">{{v.message}}</div>
+						</div>
+					</div>
+					<span class="time">{{v.time}}</span>
+				</div>
+        	</a>
+			<div ng-click="deleteList($index)" class="delList">
+				<span>删除</span>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <section class="content">
+	<div class="con-zone" ng-controller="weixinCtrl">
+			<div class="con-item xx" ng-repeat="v in chatList" ng-class="{'show-delete':show}" ng-swipe-left="show=true" ng-swipe-right="show=false" ng-init="show=false">
+		        <a href="#/weixin/{{$index}}">
+					<img src="{{v.image}}" class="head-img">
+					<div class="con-item-inner">
+						<a href="">
+							<div class="title">{{v.name}}</div>
+							<div class="summary">{{v.message}}</div>
+						</a>
+					</div>
+					<span class="time">{{v.time}}</span>
+	        	</a>
+				<div ng-click="deleteList($index)" class="delList">
+					<span>删除</span>
+				</div>
+			</div>
+	</div>
+</section> -->

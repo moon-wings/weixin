@@ -1,0 +1,36 @@
+<section class="content" id="tongxunlu">
+	<div class="con-zone">
+		<ul class="cate">
+			<li>
+				<a href="" class="cate-icon nf"></a>
+				<span class="cate-con">新的朋友</span>
+			</li>
+			<li>
+				<a href="" class="cate-icon ql"></a>
+				<span class="cate-con">群聊</span>
+			</li>
+			<li>
+				<a href="" class="cate-icon bq"></a>
+				<span class="cate-con">标签</span>
+			</li>
+			<li>
+				<a href="" class="cate-icon gzh"></a>
+				<span class="cate-con">公众号</span>
+			</li>
+		</ul>
+		<div class="friends">
+			<div class="friend" ng-repeat="v in tongxunlu">
+				<div  data-key="{{v.key}}" class="szm">{{v.key}}</div>
+				<ul>
+					<li ng-repeat= "x in v.people">
+						<a href="" class="cate-icon">
+							<img src="{{x.img}}" alt="">
+						</a>
+						<span class="cate-con">{{x.name}}</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<uq-zimu></uq-zimu>
+	</div>
+</section>

@@ -1,0 +1,36 @@
+<header class="header">
+	<div class="header-nav">
+		<span class="logo-name" ng-model="title">{{title}}</span>
+		<span class="mes-num"></span>
+		<div class="tool-bar">
+			<div class="search"></div>
+			<div class="add" ng-click="show=!show" ng-init="show=false">
+				<span class="red-circle"></span>
+			</div>
+		</div>
+		<div class="extra-info" ng-show="show">
+			<ul class="kuang">
+				<li class="e-item">
+					<span class="e-icon"></span>
+					<span class="e-info">发起群聊</span>
+				</li>
+				<li class="e-item">
+					<span class="e-icon addfri"></span>
+					<span class="e-info">添加朋友</span>
+				</li>
+				<li class="e-item">
+					<span class="e-icon sys"></span>
+					<span class="e-info">扫一扫</span>
+				</li>
+				<li class="e-item">
+					<span class="e-icon sfk"></span>
+					<span class="e-info">收付款</span>
+				</li>
+				<li class="e-item">
+					<span class="e-icon bzyfk"></span>
+					<span class="e-info">帮助与反馈</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+</header>
